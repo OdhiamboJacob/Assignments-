@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Semantic HTML</title>
+        <style>
+            body{
+                background-color: aquamarine;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-attachment: fixed;
+                padding: 0%;
+
+            }
+            .info1{
+                font-family: 'Times New Roman';
+                font-size: 20px;
+                padding-top: 10px;
+            }
+            .btn{
+                width: 75px;
+                height: 30px;
+                background: orange;
+                border: none;
+                margin-top: 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                color: white;
+                font-size: 18px;
+                transition: 0.4s ease;
+                font-family: 'Times New Roman';
+            }
+            .btn:hover{
+                background-color: white;
+                font-family: 'Times New Roman';
+                color: orange;
+                text-decoration: none;
+                color: black;
+                font-weight: bold
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <h1>Semantic HTML using Section tag </h1>
+        <div class="info1">
+            <form >
+                <section>
+                    <label for="fullname">Full Name</label>
+                    <input type="text"id="fullnme" name="fullname"  placeholder="Enter full names"><br><br>
+                </section>
+
+                <section>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email Adress" required><br><br>
+                </section>
+
+                <section>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+                </section>
+
+                <section>
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="select">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+                </section>
+
+                <section>
+                    <label for="newsletter">Subscribe to newsletter</label>
+                    <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+                </section>
+
+                <section>
+                    <label for="comments">Comments</label>
+                    <textarea  id="comments" name="comments" rows="4"></textarea>
+                </section><br>
+                    <button class="btn">Submit</button>
+            </form>
+    </div>
+    </body>
+</html>
